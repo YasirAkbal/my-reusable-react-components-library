@@ -192,13 +192,8 @@ const questions = [
     <Quizz.QuestionSection>
         <Quizz.Question />
         <Quizz.OptionsSection>
-            {/* Options are rendered automatically based on context */}
             <Quizz.Option />
         </Quizz.OptionsSection>
     </Quizz.QuestionSection>
 </Quizz>
 ```
-
-## 📄 License
-
-[MIT](https://choosealicense.com/licenses/mit/)
