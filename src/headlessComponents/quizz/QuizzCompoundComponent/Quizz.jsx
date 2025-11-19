@@ -1,4 +1,4 @@
-import useQuiz from "../../../../hooks/useQuizz"; 
+import useQuiz from "../../../hooks/useQuizz"; 
 import React from "react";  
 import PropTypes from "prop-types";
 
