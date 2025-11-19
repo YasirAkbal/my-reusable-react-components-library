@@ -1,4 +1,5 @@
 import CardIcon from '../../assets/card-icon.svg';
+import './Card.css';
 
 export default function Card({ children, title, description, icon=CardIcon, ...rest }) {   
     return (

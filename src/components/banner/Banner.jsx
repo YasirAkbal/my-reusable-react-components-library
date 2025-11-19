@@ -5,6 +5,7 @@ import IconWarning from '../../assets/warning.svg'
 import IconError from '../../assets/error.svg'
 import IconNeutral from '../../assets/neutral.svg'
 import clsx from 'clsx';
+import './Banner.css';
 
 const ICONS = {
     success: IconSuccess,

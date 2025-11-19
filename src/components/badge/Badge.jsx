@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { getCssColorVar } from '../../utils/colors';
+import './Badge.css';
 
 export default function Badge({ children, type, color, ...rest }) {
     const backgroundColor = getCssColorVar(getBackgroundColor(color)) ?? getBackgroundColor("gray");

@@ -1,0 +1,39 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 896px;
+  padding: 16px;
+  gap: 12px;
+  min-height: 52px;
+  border-radius: 6px;
+}
+
+.banner > img {
+  height: 20px;
+  width: 20px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.banner-content * {
+  margin: 0px;
+}
+
+.banner-content > h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.banner-content > p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

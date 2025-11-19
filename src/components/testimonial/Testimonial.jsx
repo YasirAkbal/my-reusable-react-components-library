@@ -1,5 +1,6 @@
 import TestimonialWithImage from './TestimonialWithImage.jsx';
 import TestimonialWithoutImage from './TestimonialWithoutImage.jsx';
+import "./Testimonial.css"
 
 const TYPE_MAP = {
   'with-image': TestimonialWithImage,
