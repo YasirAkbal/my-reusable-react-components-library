@@ -36,7 +36,7 @@ This project is a personal exploration into building **reusable React components
 
 2. Navigate to the project directory:
    ```bash
-   cd ComponentLibrary
+   cd my-reusable-react-components-library
    ```
 
 3. Install dependencies:
