@@ -56,7 +56,7 @@ export default function useQuiz(questions) {
         return selectedOptions.every(option => option.selectedOptionId !== OPTION_IS_NOT_SELECTED)
     }
 
-    function canFinishQuizz() {
+    function canFinishQuiz() {
         return areAllQuestionsAnswered() && !isFinished
     }
 
@@ -108,7 +108,7 @@ export default function useQuiz(questions) {
         isSelectedOptionCorrect,
         isQuestionAnswered,
         areAllQuestionsAnswered,
-        canFinishQuizz,
+        canFinishQuiz,
         isOptionSelected,
         questions,
         selectedOptions

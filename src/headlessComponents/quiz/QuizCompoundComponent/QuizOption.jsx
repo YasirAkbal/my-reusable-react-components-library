@@ -1,19 +1,19 @@
 import React from "react";
-import { QuizzContext } from "./Quizz";
-import { QuizzQuestionSectionContext } from "./QuizzQuestionSection";
+import { QuizContext } from "./Quiz";
+import { QuizQuestionSectionContext } from "./QuizQuestionSection";
 
-export default function QuizzOption({ children, optionId }) {
+export default function QuizOption({ children, optionId }) {
     const { 
         isFinished, 
         selectAnOption, 
         isSelectedOptionCorrect, 
         isQuestionAnswered,
-        isOptionSelected } = React.useContext(QuizzContext)
+        isOptionSelected } = React.useContext(QuizContext)
 
-    const { questionId } = React.useContext(QuizzQuestionSectionContext);
+    const { questionId } = React.useContext(QuizQuestionSectionContext);
     
     if (typeof children !== "function") {
-        console.error("Quizz.Option expects a function as children");
+        console.error("Quiz.Option expects a function as children");
         return null;
     }
 

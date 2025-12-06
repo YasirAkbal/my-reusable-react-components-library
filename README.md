@@ -6,14 +6,14 @@ This project is a personal exploration into building **reusable React components
 
 - **Reusable Component Architecture:** Designing components that are flexible, maintainable, and easy to use in various contexts.
 - **React Design Patterns:** Implementing patterns like **Compound Components** (used in the Quiz component) and **Render Props**.
-- **Custom Hooks:** Encapsulating reusable logic (e.g., `useQuizz`) to keep components clean and functional.
+- **Custom Hooks:** Encapsulating reusable logic (e.g., `useQuiz`) to keep components clean and functional.
 - **CSS & Styling:** Managing styles effectively with CSS Modules and utility classes.
 - **Headless UI:** Creating logic-only components that give full control over the UI rendering.
 
 ## 🚀 Features
 
 - **Modular Components:** A collection of UI elements built from scratch.
-- **Compound Component Pattern:** Demonstrated in the `Quizz` component for flexible state sharing.
+- **Compound Component Pattern:** Demonstrated in the `Quiz` component for flexible state sharing.
 - **Custom Hooks:** Logic extraction for better state management.
 - **Customizable:** Props for colors, variants, and layouts.
 - **Modern Stack:** Built with React 19 and Vite.
@@ -162,22 +162,22 @@ import Testimonial from './components/testimonial/Testimonial';
 />
 ```
 
-### 5. Quizz (Headless Component)
+### 5. Quiz (Headless Component)
 
 A flexible compound component for managing quiz logic and state. It handles the logic while you provide the UI structure.
 
 **Subcomponents:**
-- `Quizz.StartButton`
-- `Quizz.QuestionSection`
-- `Quizz.Question`
-- `Quizz.OptionsSection`
-- `Quizz.Option`
-- `Quizz.FinishButton` (and others)
+- `Quiz.StartButton`
+- `Quiz.QuestionSection`
+- `Quiz.Question`
+- `Quiz.OptionsSection`
+- `Quiz.Option`
+- `Quiz.FinishButton` (and others)
 
 **Usage:**
 
 ```jsx
-import Quizz from './headlessComponents/quizz/QuizzCompoundComponent/Quizz';
+import Quiz from './headlessComponents/quiz/QuizCompoundComponent';
 
 const questions = [
     {
@@ -187,13 +187,13 @@ const questions = [
     }
 ];
 
-<Quizz questions={questions} onFinish={(score) => console.log(score)}>
-    <Quizz.StartButton>Start Quiz</Quizz.StartButton>
-    <Quizz.QuestionSection>
-        <Quizz.Question />
-        <Quizz.OptionsSection>
-            <Quizz.Option />
-        </Quizz.OptionsSection>
-    </Quizz.QuestionSection>
-</Quizz>
+<Quiz questions={questions} onFinish={(score) => console.log(score)}>
+    <Quiz.StartButton>Start Quiz</Quiz.StartButton>
+    <Quiz.QuestionSection>
+        <Quiz.Question />
+        <Quiz.OptionsSection>
+            <Quiz.Option />
+        </Quiz.OptionsSection>
+    </Quiz.QuestionSection>
+</Quiz>
 ```

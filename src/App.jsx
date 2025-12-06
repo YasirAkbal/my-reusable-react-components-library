@@ -8,10 +8,15 @@ import TestimonialIcon from './assets/testimonial-icon.png'
 import Christina from './assets/christina.jpg'
 import TestimonialLogo from './assets/testimonial-logo.png';
 import Testimonial from './components/testimonial/Testimonial.jsx'
+import QuizTest from './components/quizTest/QuizTest.jsx'
 
 function App() {
   return (
     <>
+      <QuizTest />
+      
+      <hr style={{ margin: '3rem 0' }} />
+
       <Badge color="blue" type="square">Badge</Badge>
       <Badge color="red" type="square">Badge</Badge>
       <Badge color="yellow" type="pill">Badge</Badge>
