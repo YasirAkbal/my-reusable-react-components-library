@@ -31,12 +31,12 @@ This project is a personal exploration into building **reusable React components
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YasirAkbal/my-reusable-react-components-library.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd ComponentLibrary
+   cd my-reusable-react-components-library
    ```
 
 3. Install dependencies:
